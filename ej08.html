@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 8 - Diseño responsivo</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f5fa;
+        }
+
+        header {
+            background-color: #10243a;
+            color: white;
+            text-align: center;
+            padding: 35px 15px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            background-color: #176b87;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #65d6e8;
+            color: #10243a;
+        }
+
+        .contenedor {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 25px;
+        }
+
+        .tarjeta {
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+        }
+
+        h2 {
+            color: #176b87;
+        }
+
+        @media (max-width: 768px) {
+            .contenedor {
+                grid-template-columns: 1fr;
+                padding: 15px;
+            }
+
+            header h1 {
+                font-size: 24px;
+            }
+
+            nav a {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Mi página responsiva</h1>
+        <p>Joseph William Alvarado Arias</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="ej05.html">Biografía</a>
+        <a href="ej07.html">Navegación</a>
+        <a href="ej09.html">Galería</a>
+    </nav>
+
+    <main class="contenedor">
+
+        <div class="tarjeta">
+            <h2>Economía</h2>
+            <p>Me interesa comprender los mercados y la actividad económica.</p>
+        </div>
+
+        <div class="tarjeta">
+            <h2>Tecnología</h2>
+            <p>Aprendo programación y desarrollo de sistemas inteligentes.</p>
+        </div>
+
+        <div class="tarjeta">
+            <h2>Idiomas</h2>
+            <p>Me gusta practicar inglés y conocer otras culturas.</p>
+        </div>
+
+    </main>
+
+</body>
+</html>

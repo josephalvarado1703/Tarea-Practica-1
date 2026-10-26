@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6 - Diseño de caja</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f5fa;
+            padding: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #176b87;
+        }
+
+        .caja {
+            max-width: 600px;
+            min-height: 250px;
+            margin: 30px auto;
+            border: 4px solid #176b87;
+            border-radius: 20px;
+            background-color: #d9f4fa;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 25px;
+        }
+
+        #mensaje {
+            font-size: 24px;
+            color: #10243a;
+            font-weight: bold;
+        }
+
+        input {
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Diseño de caja interactiva</h1>
+
+    <div class="caja">
+        <p id="mensaje">¡Aprender es crear nuevas oportunidades!</p>
+
+        <label for="slider">Cambia el tamaño del texto:</label>
+
+        <input type="range" id="slider"
+               min="16" max="40" value="24"
+               oninput="document.getElementById('mensaje').style.fontSize =
+               this.value + 'px'">
+
+    </div>
+
+    <p><a href="index.html">Volver al inicio</a></p>
+
+</body>
+</html>

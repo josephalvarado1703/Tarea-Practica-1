@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10 - Página completa</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f5fa;
+            color: #263746;
+        }
+
+        header {
+            background: linear-gradient(135deg, #10243a, #176b87);
+            color: white;
+            padding: 35px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #176b87;
+            text-decoration: none;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #e07a5f;
+        }
+
+        .contenedor {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+            max-width: 1100px;
+            margin: 25px auto;
+            padding: 20px;
+        }
+
+        article, aside {
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px #00000010;
+        }
+
+        h2 {
+            color: #176b87;
+        }
+
+        aside {
+            border-top: 5px solid #65d6e8;
+        }
+
+        footer {
+            background-color: #10243a;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 700px) {
+            .contenedor {
+                grid-template-columns: 1fr;
+                padding: 12px;
+            }
+
+            header {
+                padding: 25px 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>JOSEPH WILLIAM ALVARADO ARIAS</h1>
+        <p>Mi biografía y portafolio personal</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="#presentacion">Presentación</a>
+        <a href="#formacion">Formación</a>
+        <a href="#intereses">Intereses</a>
+    </nav>
+
+    <div class="contenedor">
+
+        <main>
+
+            <article id="presentacion">
+                <h2>Sobre mí</h2>
+
+                <p>
+                    Mi nombre es Joseph William Alvarado Arias.
+                    Soy estudiante y me interesa aprender, desarrollar
+                    habilidades y descubrir nuevas oportunidades.
+                </p>
+
+                <p>
+                    Mi objetivo es combinar mis conocimientos para
+                    crecer tanto personal como profesionalmente.
+                </p>
+            </article>
+
+            <article id="formacion">
+                <h2>Mi formación académica</h2>
+
+                <h3>Economía</h3>
+                <p>
+                    Estudio conceptos económicos y análisis de los
+                    mercados y de la realidad financiera.
+                </p>
+
+                <h3>Ingeniería en Sistemas Inteligentes</h3>
+                <p>
+                    Me interesa la programación, las bases de datos
+                    y la resolución de problemas tecnológicos.
+                </p>
+
+                <h3>Pedagogía en Idiomas Extranjeros</h3>
+                <p>
+                    Me interesa mejorar mis habilidades en inglés
+                    y aprender sobre la enseñanza de idiomas.
+                </p>
+            </article>
+
+            <article id="intereses">
+                <h2>Mis intereses</h2>
+
+                <p>
+                    Disfruto los videojuegos, la tecnología,
+                    los viajes y el aprendizaje de idiomas.
+                    Mi experiencia de Work & Travel también fortaleció
+                    mi interés por el inglés y el intercambio cultural.
+                </p>
+            </article>
+
+        </main>
+
+        <aside>
+            <h2>Información personal</h2>
+
+            <p><strong>Nombre:</strong></p>
+            <p>Joseph William Alvarado Arias</p>
+
+            <p><strong>Habilidades:</strong></p>
+            <ul>
+                <li>Responsabilidad.</li>
+                <li>Trabajo en equipo.</li>
+                <li>Adaptabilidad.</li>
+                <li>Aprendizaje continuo.</li>
+            </ul>
+
+            <p><strong>Idiomas:</strong></p>
+            <p>Español e inglés B2 certificado.</p>
+
+            <p><a href="index.html">Volver al inicio</a></p>
+        </aside>
+
+    </div>
+
+    <footer>
+        <p>Proyecto académico de HTML y CSS</p>
+        <p>Joseph William Alvarado Arias © 2026</p>
+    </footer>
+
+</body>
+</html>
